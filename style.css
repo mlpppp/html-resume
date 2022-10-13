@@ -63,7 +63,7 @@ li{
   width: var(--sidebar-width);
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
-  padding-bottom: 0.35in;
+  padding-bottom: 0.25in;
   background-color: #f2f2f2;
   font-size: 8.5pt;
 }
@@ -399,22 +399,94 @@ li{
 /* skills */
 #skills {
   grid-area: skill;
-  padding: 0 0.25in;
+  /* padding: 0 0.25in; */
   width: 100%;
 }
-
+#skills h3{
+  font-size: 12px;
+}
 #skills h2{
   font-weight: 400;
   line-height: 1.3;
   color: #444;
   font-size: 11pt;
-  padding-left: 78px;
+  padding-left: 99px;
   padding-bottom: 10px;
 }
 
 .skill-grid {
   display: grid;
-  
+  grid-template-columns: 48fr 17fr ;
+  grid-gap: 15px;
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+.skill {
+  background: rgb(166, 182, 235);
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 5px 10px 0px 10px;
+  padding-bottom: 0;
+}
+
+.skill:nth-child(2),.skill:nth-child(3){
+  background: rgba(203, 112, 112, 0.504);
+} 
+
+.skill-subsets{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.skill h4{
+  font-size: 7.5pt;
+  color: #000;
+  font-weight: 300;
+  margin: 3px 0px 0px 4px;
+  margin-top: 3px;
+  min-height: 15px;
+}
+
+
+.subset {
+  display: flex;
+  flex-direction: row;
+}
+
+.stack {
+  margin: 5px;
+  width: fit-content;
+}
+.stack p{
+  font-weight: 600;
+  font-size: 8px;
+  text-align: center;
+}
+
+
+.stack-img {
+  display: block;
+  width: 30px;
+  margin: auto !important; 
+}
+.stack-img.R{
+  height: 30px;
+}
+
+/* projects */
+.details.row h3:hover{
+  filter: invert(40%);
+}
+
+.details.row img {
+  height: 10px;
+  margin-left: 5px;
+
+}
+.details.row img:hover {
+  filter: invert(40%);
 }
 
 /* others */
@@ -432,4 +504,13 @@ li{
 }
 .exp-details {
   padding: 2px 0 0 0 !important;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
 }
