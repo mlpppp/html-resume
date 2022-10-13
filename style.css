@@ -58,10 +58,12 @@ li{
 
 #sidebar{
   float: right;
-  position: relative; /* for disclaimer */
+  display: flex;
+  flex-direction: column;
   width: var(--sidebar-width);
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
+  padding-bottom: 0.35in;
   background-color: #f2f2f2;
   font-size: 8.5pt;
 }
@@ -366,4 +368,68 @@ li{
   font-family: "Source Code Pro";
   font-weight: 400;
   font-style: normal;
+}
+
+/* contact */
+.contact-img {
+  height: 15px;
+  width: 15px;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+#contact {
+  margin-top: 30px;
+}
+#contact .row img{
+  margin-right: 10px;
+}
+
+#my-photo img{
+  height: 100px;
+  margin-left: 20px;
+}
+
+/* summary */
+#summary {
+  margin-top: 20px;
+}
+
+/* skills */
+#skills {
+  grid-area: skill;
+  padding: 0 0.25in;
+  width: 100%;
+}
+
+#skills h2{
+  font-weight: 400;
+  line-height: 1.3;
+  color: #444;
+  font-size: 11pt;
+  padding-left: 78px;
+  padding-bottom: 10px;
+}
+
+.skill-grid {
+  display: grid;
+  
+}
+
+/* others */
+.main-envelope {
+  display: grid;
+  grid-template-areas: 
+  "main main sidebar"
+  "skill skill skill";
+}
+.main-block {
+  grid-area: main;
+}
+#sidebar {
+  grid-area: sidebar;
+}
+.exp-details {
+  padding: 2px 0 0 0 !important;
 }
