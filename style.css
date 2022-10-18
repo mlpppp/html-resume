@@ -375,10 +375,9 @@ li{
   height: 15px;
   width: 15px;
 }
-.row {
-  display: flex;
-  align-items: center;
-}
+#contact a:hover{
+  filter: invert(40%);
+} 
 #contact {
   margin-top: 30px;
 }
@@ -480,16 +479,27 @@ li{
   filter: invert(40%);
 }
 
-.details.row img {
-  height: 10px;
-  margin-left: 5px;
-
-}
-.details.row img:hover {
-  filter: invert(40%);
+/* myPhoto */
+#my-photo img{
+  border-radius: 50%;
 }
 
 /* others */
+.link-img {
+  height: 10px;
+  margin-left: 5px;
+}
+.link-img:hover {
+  filter: invert(40%);
+}
+
+#publish-link:hover {
+  filter: invert(40%);
+}
+
+a:visited {
+  color: inherit;
+}
 .main-envelope {
   display: grid;
   grid-template-areas: 
