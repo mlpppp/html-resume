@@ -415,7 +415,7 @@ li{
 
 .skill-grid {
   display: grid;
-  grid-template-columns: 48fr 17fr ;
+  grid-template-columns: fit-content(800px) 17fr ;
   grid-gap: 15px;
   margin-left: 45px;
   margin-top: 10px;
@@ -437,7 +437,7 @@ li{
 .skill-subsets{
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 20px;
 }
 .skill h4{
   font-size: 7.5pt;
@@ -468,6 +468,7 @@ li{
 .stack-img {
   display: block;
   width: 30px;
+  height: 30px;
   margin: auto !important; 
 }
 .stack-img.R{
