@@ -525,3 +525,11 @@ a:visited {
   display: flex;
   flex-direction: row;
 }
+
+/* projects */
+#prj-detail {
+  margin: auto;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
